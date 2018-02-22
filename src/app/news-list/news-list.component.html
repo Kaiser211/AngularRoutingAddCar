@@ -1,0 +1,9 @@
+<form (submit)="getNews()"> 
+	<div>
+		<label>Source</label>
+		<select name="source" [(ngModel)]="newSource.source">
+		<option *ngFor="let source of sources" [value]="source.value">{{ source.name }}</option>
+	</select>
+	</div>
+	<input type="submit" value="Submit">
+</form>

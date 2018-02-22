@@ -1,0 +1,7 @@
+<!-- <p> {{ cars | json }}</p> -->
+
+<ul>
+	<li *ngFor="let car of cars">
+		<a [routerLink]="[car.id]">{{ car.model }}</a>
+	</li>
+</ul>
